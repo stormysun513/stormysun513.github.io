@@ -1,20 +1,30 @@
 # This is the default format. 
+# Name of your blog (this will show up at the top of your page and in the RSS feed)
+name: Yu-Lun Tsai's website
+
+# Short description (goes below the title; it will also be used in the RSS feed)
+description: Collection of my works and experience.
+
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+highlighter: pygments# Name of your blog (this will show up at the top of your page and in the RSS feed)
+name: Sample Jekyll Blog
+
+# Short description (goes below the title; it will also be used in the RSS feed)
+description: This is a sample Jekyll Blog.
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
+title : Yu-Lun's website
 tagline: Site Tagline
 author :
   name : Yu-Lun Tsai
   email : stormysun513@gmail.com
   github : stormysun513
-  twitter : None
+  twitter : TsaiYuLun
   feedburner : None
 
 # The production_url is only used when full-domain names are needed

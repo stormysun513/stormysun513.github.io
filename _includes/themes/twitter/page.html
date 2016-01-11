@@ -1,9 +1,16 @@
 <div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+  <h1>
+  	<div class="header-title">
+  		{{ page.title }}
+  	</div>
+  	<div class="header-tagline">
+  		<small>{{ page.tagline }}</small>
+  	</div>
+  </h1>
 </div>
 
-<div class="row-fluid">
-  <div class="span12">
+<div class="row">
+  <div class="span14">
     {{ content }}
   </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: printf("I'm Yu-Lun Tsai.");
+<!-- tagline: Imagine and Create! -->
 ---
 {% include JB/setup %}
 
