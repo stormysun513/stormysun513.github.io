@@ -76,6 +76,11 @@ body {
 }
 
 /* CSS for contact.html */
+#contact-fill {
+	width: 90%;
+	margin: 40px;
+}
+
 #info-fill {
 	width:50%;
 	height: 300px;
@@ -103,8 +108,13 @@ body {
 	width: 400px;
 	height: 300px;
 	position: relative;
-	left: 5px;
+	right: 40px;
 	background-color: #CCC;
+}
+
+#publication-fill {
+	width: 90%;
+	margin: 40px;
 }
 
 #publication-category {
@@ -114,6 +124,7 @@ body {
 	font-style: italic;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	left:10px;
+
 }
 
 .publications{
@@ -126,18 +137,31 @@ body {
 	font-family: "Times New Roman", Times, serif;
 }
 
+#index-page{
+	width: 90%;
+	margin: 40px;
+}
+
+
 #profile-photo {
     display: block;
-    max-width:400px;
+    max-width:300px;
     max-height:300px;
     width: auto;
     height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-#index-content{
-	width: 90%;
-	position: relative;
-	top: 5px;
-	margin: auto;
+
+#index-content p {
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 30px;
+	text-align: justify;
+    text-justify: inter-word;
 }
-	
+
+
