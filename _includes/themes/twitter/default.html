@@ -15,6 +15,9 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/css/1.4.0/bootstrap.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    {% if page.title == 'Curriculum Vitae' %}
+    <link href="{{ BASE_PATH }}/assets/resume.css" rel="stylesheet">
+    {% endif %}
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -44,7 +47,7 @@
               {% include JB/pages_list %}
                -->
               <!-- <li><a href="/pages.html">Pages</a></li>         -->
-              <li><a href="/pages/CV.html">CV</a></li>
+              <li><a href="/pages/cv.html">CV</a></li>
               <li><a href="/pages/research &amp; projects.html">Research &amp; Projects</a></li>
               <li><a href="/pages/publications.html">Publications</a></li>
               <li><a href="/pages/contact.html">Contact</a></li>
