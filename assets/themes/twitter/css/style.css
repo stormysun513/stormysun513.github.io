@@ -102,8 +102,8 @@ body {
 
 .contact-info {
 	position:relative;
-	left: 25px;
-	top: 60px;
+	padding-left: 50px;
+	padding-top: 50px;
 }
 
 .contact-info p {
@@ -220,8 +220,16 @@ body {
 }
 
 .project-content {
-	height: 360px;
+	height: 400px;
 	/*border: 1px solid #ccc;*/
+}
+
+.project-content p {
+	font-size: 15px;
+}
+
+.project-content li {
+	font-size: 15px;
 }
 
 .project-description {
@@ -235,9 +243,9 @@ body {
 	width: 55%;
 	float: left;
 	padding-top: 100px;
-	padding-bottom: 80px;
 	padding-left: 5px;
 }
+
 .project-photo{
 	display: block;
     max-width:320px;
