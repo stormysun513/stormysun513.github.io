@@ -126,6 +126,8 @@ body {
 	background-color: #CCC;
 }
 
+/* Publications CSS setting ======================================================== */
+
 #publication-fill {
 	width: 90%;
 	margin: 40px;
@@ -150,6 +152,8 @@ body {
 	font-size: 15px;
 	font-family: "Times New Roman", Times, serif;
 }
+
+/* Index CSS setting ======================================================== */
 
 #index-page{
 	width: 90%;
@@ -177,5 +181,79 @@ body {
 	text-align: justify;
     text-justify: inter-word;
 }
+
+/* Research & Projects CSS setting ======================================================== */
+
+.nav-panel {
+	background-color: #F3F3F3;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom:20px;
+	margin-right: 220px
+}
+
+.nav-content {
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+
+#project-list-content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.project-category-title {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.project-title {
+	padding-top: 10px;
+	padding-bottom: 0px;
+	background-color: #F3F3F3;
+}
+
+.project-title h3{
+	color: #045313;
+}
+
+.project-content {
+	height: 360px;
+	/*border: 1px solid #ccc;*/
+}
+
+.project-description {
+	width: 55%;
+	float: left;
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+.project-description-self {
+	width: 55%;
+	float: left;
+	padding-top: 100px;
+	padding-bottom: 80px;
+	padding-left: 5px;
+}
+.project-photo{
+	display: block;
+    max-width:320px;
+    max-height:240px;
+    width: auto;
+    height: auto;
+	padding-top: 60px;
+	padding-left: 15px;
+	padding-bottom: 60px;
+}
+
+/* //-- footer -- */
+#ft { padding: 1em 0 2em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
+#ft p { margin-bottom: 0; text-align: center;   }
+
+
+
 
 

@@ -1,7 +1,199 @@
 ---
 layout: page
-title: "Research   Projects"
+title: "Research &amp; Projects"
 description: ""
 group: navigation
 ---
 {% include JB/setup %}
+
+<div id="project-page-inner">
+	<div class="nav-panel">  <!-- color 243 -->
+		<div class="nav-content">
+			<div id="nav-title">
+				<h4>Contents</h4>
+			</div>
+			<div class="nav-categories">
+				<div class="nav-categoty-title">
+					<p id="li-1">Reserach Projects</p>
+				</div>
+				<ol class="nav-categoty-options">
+					<li id="li-1-1"><a href="#">BioScope</a></li>
+					<li id="li-1-2"><a href="#">Rehab diary</a></li>
+				</ol>
+			</div>
+			<div class="nav-categories">
+				<div class="nav-categoty-title">
+					<p id="li-2">Course Projects</p>
+				</div>
+				<ol class="nav-categoty-options">
+					<li id="li-2-1"><a href="#">Offline speech recognition system (Machine Learning and Having It Deep)</a></li>
+					<li id="li-2-2"><a href="#">Functionally Reduced And-Inverter Graph Simulator (Data Structure and Programming)</a></li>
+					<!-- <li id="li-2-3"><a href="#">Vocabulary Rush (Networking and Multimedia)</a></li> -->
+				</ol>
+			</div>
+		</div>
+	</div><!--// hd -->
+
+	<div id="project-list-body">
+		<div id="project-list-content">
+			<div class="project-category-title" id="div-1">
+				<h2>Research Projects</h2>
+			</div>
+
+			<div class="project-category-content">
+
+				<div class="project" id="div-1-1">
+					<div class="project-header">
+						<div class="project-title">
+							<h3>BioScope</h3>
+						</div>
+						<h4>Advisor: Prof. Hao-Hua Chu</h4>
+					</div>
+					<div class="project-content">
+						<div class="project-description">
+							<p>The goal of this project is to create an extensible bandage system with sensory and processing components that can be stacked like LEGO blocks. Using this smart bandage system, nurses can conveniently customise and configure these sensor blocks to remotely monitor physiological data of patients and assess their physical condition in hospitals.
+							</p>
+							<p>My contribution:</p>
+							<ul>
+								<li>Designed the mockup of outer casing through software 123D Design and prototyped with 3D printers.</li>
+								<li>Implemented pedometers and position detection with accelerometers, heartbeat counter with ADC in PIC32 embedded system.</li>
+								<li>Integrate a gesture detection modules with SSD1306 OLED display as an user interface for the bandage system.</li>
+								<li>Bridged the data transfer between PIC32 and mobile phone with TI CC254x Bluetooth module.</li>
+							</ul>
+						</div>
+						<div class="project-image">
+							<img src="../images/BioScope.jpg" class="project-photo">
+						</div>
+					</div>
+				</div>
+
+				<div class="project" id="div-1-2">
+					<div class="project-header">
+						<div class="project-title">
+							<h3>Rehab diary</h3>
+						</div>
+						<h4>Advisor: Prof. Hao-Hua Chu</h4>
+					</div>
+					<div class="project-content">
+						<div class="project-description">
+							<p>This project entails a phone support application to help Ketamine-dependent users to self-monitor their drug use and motivate them to maintain abstinence.  A Ketamine-dependent user is requested to perform a saliva-screening test by using the screening device in the view of his or her smartphone camera. The screening result is then sent to the smartphone through Bluetooth and then forwarded to a backend server in which his or her psychiatrist can remotely monitor the patient data. 
+							</p>
+							<p>My contribution:</p>
+							<ul>
+								<li>Implemented driver with OV2640 embedded camera with STM32 Discovery board. </li>
+								<li>Came up with a circuit to detect whether the test strip inside the screening device is soaked.</li>
+								<li>Designed the inner structure with lens and camera to accommodate the entire test strip but also reduce the size of device.</li>
+								<li>Implemented the android interface with Bluetooth Low Energy API to retrieve images from screening device.</li>
+							</ul>
+						</div>
+						<div class="project-image">
+							<img src="../images/RehabDiary.jpg" class="project-photo">
+						</div>
+					</div>
+				</div>
+
+			</div><!--// .yui-u -->
+
+			<div class="project-category-title" id="div-2">
+				<h2>Course Projects</h2>
+			</div>
+
+			<div class="project-category-content">
+
+				<div class="project" id="div-2-1">
+					<div class="project-header">
+						<div class="project-title">
+							<h3>Offline speech recognition system (Machine Learning and Having It Deep)</h3>
+						</div>
+						<h4>Instructor: Prof. Hung-Yi Lee</h4>
+					</div>
+					<div class="project-content">
+						<div class="project-description">
+							<p>This project is aimed to build an offline speech recognition system with some existing toolkits or algorithms implemented in a few assignments in the class. First, we were given raw speech data, which can be transform into both MFCC or fBank features. The recognition system is comprised of two parts: the acoustic model and the language model. We utilised Deep Neural Network combined with HMM to get the predicted state sequence. The phonemes can be generated through WFST and then forward to Recurrent Neural Network or NN with long short-term memory nodes.  
+							</p>
+							<p>My contribution:</p>
+							<ul>
+								<li>Surveyed Deep Neural Network (DNN) toolkits such as libdnn and Keras.</li>
+								<li>Preprocessed raw acoustic data to feature vectors.</li>
+								<li>Implemented Viterbi algorithm with state likelihood outputted by DNN and probabilities of state transition from training data.</li>
+							</ul>
+						</div>
+						<div class="project-image">
+							<img src="../images/DeepLearning.png" class="project-photo">
+						</div>
+					</div>
+				</div>
+
+				<div class="project" id="div-2-2">
+					<div class="project-header">
+						<div class="project-title">
+							<h3>Functionally Reduced And-Inverter Graph Simulator (Data Structure and Programming)</h3>
+						</div>
+						<h4>Instructor: Prof. Chung-Yang Huang</h4>
+					</div>
+					<div class="project-content">
+						<div class="project-description-self">
+							<p>It was the final project of Data Structure and Programming. I implemented a command line based software to parse an And-Inverter Graph and represents  it as a data structure in the software. Several commands were provided to optimise the circuit structure and reducing the functionally equivalent candidate subgraphs. For example, unused gate sweeping, trivial optimization, structural hash and functional equivalent pairs. 
+							</p>
+						</div>
+						<div class="project-image">
+							<img src="../images/FRAIG.png" class="project-photo">
+						</div>
+					</div>
+				</div>
+
+			</div><!--// .yui-u -->
+
+		</div><!--// yui-main -->
+	</div><!--// bd -->
+
+	<div id="ft">
+		<p>Yu-Lun Tsai &mdash; <a href="mailto:stormysun513@gmail.com">stormysun513@gmail.com</a> &mdash; +886-911836598</p>
+	</div><!--// footer -->
+
+</div><!-- // inner -->
+
+<script>
+	// $(document).ready(function (){
+ //        $("#li-1").click(function (){
+ //            $('html, body').animate({
+ //                scrollTop: $("#div-1").offset().top - 50
+ //            }, 1000);
+ //        });
+ //    });
+    $(document).ready(function (){
+        $("#li-1-1").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#div-1-1").offset().top - 50
+            }, 1000);
+        });
+    });
+    $(document).ready(function (){
+        $("#li-1-2").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#div-1-2").offset().top - 50
+            }, 1000);
+        });
+    });
+    // $(document).ready(function (){
+    //     $("#li-2").click(function (){
+    //         $('html, body').animate({
+    //             scrollTop: $("#div-2").offset().top - 50
+    //         }, 1000);
+    //     });
+    // });
+    $(document).ready(function (){
+        $("#li-2-1").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#div-2-1").offset().top - 50
+            }, 1000);
+        });
+    });
+    $(document).ready(function (){
+        $("#li-2-2").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#div-2-2").offset().top - 50
+            }, 1000);
+        });
+    });
+</script>

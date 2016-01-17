@@ -20,6 +20,14 @@
     <link href="{{ BASE_PATH }}/assets/resume.css" rel="stylesheet">
     {% endif %}
 
+    {% if page.title == 'Research &amp; Projects' %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    {% endif %}
+
+    {% if page.title == 'Contact' %}
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    {% endif %}
+
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -27,9 +35,6 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
-    {% if page.title == 'Contact' %}
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    {% endif %}
   </head>
 
   <body>
