@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Yu-Lun (Larry) Tsai</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet" >
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    body {
+        background: url(/assets/images/intro-bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .intro {
+        color: #cfcfcf;
+        text-align: center;
+    }
+    .intro-content {
+        position: relative;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .intro-content img{
+        height: 140px;
+        width: 140px;
+    }
+    .menu {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .menu a {
+        color: #cfcfcf;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .footer {
+        margin-top: 20px;
+    }
+    .footer-text {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+    }
+    .animate-drop-init {
+        position: relative;
+        top: -10px;
+        opacity: 0;
+    }
+    .animate-show-init {
+        opacity: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container intro">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-content">
+            <img src="/assets/images/me.jpg" class="img-circle" alt="author thumb" class="dot">
+            <h2 class="animate-drop-init">Yu-Lun Tsai</h2>
+            <h2 class="animate-drop-init">蔡育倫</h2>
+
+            <div class="menu">
+              <a href="https://github.com/stormysun513" class="animate-drop-init">GitHub</a>
+              <a href="/blog.html" class="animate-drop-init">Blog</a>
+              <a href="/assets/pdf/resume.pdf" class="animate-drop-init">Resume</a>
+              <a href="https://www.linkedin.com/in/yuluntsai" class="animate-drop-init">LinkedIn</a>
+            </div>
+            <div class="footer">
+              <i class="fa fa-location-arrow animate-show-init"></i>
+              <span class="footer-text animate-show-init">Pittsburgh - United States</span>
+
+              <i class="fa fa-envelope animate-show-init"></i>
+              <span class="footer-text animate-show-init">yulunt@andrew.cmu.edu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+
+    $(document).ready(function () {
+        var delay = 1;
+        var DELAY_STEP = 200;
+        var animationOptions = { opacity: 1, top: 0};
+
+        $('h2').animate(animationOptions).promise()
+                .pipe(animateMain)
+                .pipe(animateLocationIcon);
+
+        function animateMain() {
+            var dfd = $.Deferred();
+            var els = $('.animate-drop-init');
+            var size = els.size();
+
+            els.each(function (index, el) {
+                delay++;
+                $(el).delay(index * DELAY_STEP)
+                        .animate(animationOptions);
+                (size - 1 === index) && dfd.resolve();
+            });
+            return dfd.promise();
+        }
+
+        function animateLocationIcon() {
+            $('.animate-show-init').delay(delay * DELAY_STEP).animate({
+                opacity: 1,
+            }).promise();
+        }
+    });
+
+    </script>
+  </body>
+</html>
