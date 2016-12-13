@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Yu-Lun (Larry) Tsai</title>
+    <title>{{ site.title }}</title>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -53,6 +56,12 @@
         vertical-align: top;
         margin-right: 10px;
     }
+    .footer-text a {
+        color: #cfcfcf;
+    }
+    .footer-text i {
+        margin-right: 5px;
+    }
     .animate-drop-init {
         position: relative;
         top: -10px;
@@ -69,21 +78,21 @@
         <div class="col-lg-12">
           <div class="intro-content">
             <img src="/assets/images/me.jpg" class="img-circle" alt="author thumb" class="dot">
-            <h2 class="animate-drop-init">Yu-Lun Tsai</h2>
+            <h2 class="animate-drop-init">{{site.author}}</h2>
             <h2 class="animate-drop-init">蔡育倫</h2>
-
             <div class="menu">
-              <a href="https://github.com/stormysun513" class="animate-drop-init">GitHub</a>
+              <a href="{{ site.github }}" class="animate-drop-init">GitHub</a>
               <a href="/blog.html" class="animate-drop-init">Blog</a>
               <a href="/assets/pdf/resume.pdf" class="animate-drop-init">Resume</a>
-              <a href="https://www.linkedin.com/in/yuluntsai" class="animate-drop-init">LinkedIn</a>
+              <a href="{{ site.linkedin }}" class="animate-drop-init">LinkedIn</a>
             </div>
             <div class="footer">
-              <i class="fa fa-location-arrow animate-show-init"></i>
-              <span class="footer-text animate-show-init">Pittsburgh - United States</span>
-
-              <i class="fa fa-envelope animate-show-init"></i>
-              <span class="footer-text animate-show-init">yulunt@andrew.cmu.edu</span>
+              <span class="footer-text animate-show-init">
+                <i class="fa fa-location-arrow"></i>Pittsburgh - United States
+              </span>
+              <span class="footer-text animate-show-init">
+                <i class="fa fa-envelope"></i><a href="mailto:{{ site.email }}">yulunt@andrew.cmu.edu</a>
+              </span>
             </div>
           </div>
         </div>
