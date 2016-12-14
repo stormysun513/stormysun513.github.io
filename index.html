@@ -10,6 +10,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{{ site.title }}</title>
 
+    <link rel="stylesheet" href="{{"css/yulunt.css"|prepend:site.baseurl}}">
+
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet" >
@@ -20,83 +22,23 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-    body {
-        background: url(/assets/images/intro-bg.jpg) no-repeat center;
-        background-size: cover;
-    }
-    .intro {
-        color: #cfcfcf;
-        text-align: center;
-    }
-    .intro-content {
-        position: relative;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-    .intro-content img{
-        height: 140px;
-        width: 140px;
-    }
-    .summary {
-        margin-top: 20px; 
-    }
-    .menu {
-        margin-top: 40px;
-        text-align: center;
-        font-size: 14px;
-    }
-    .menu a {
-        text-decoration: none;
-        color: #cfcfcf;
-        margin-left: 12px;
-        margin-right: 12px;
-        border-bottom: 1px solid #cfcfcf;
-    }
-    .menu a:hover {
-        color: #eee;
-        border-bottom: 1px solid #eee;
-    }
-    .footer {
-        margin-top: 20px;
-    }
-    .footer-text {
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 10px;
-    }
-    .footer-text a {
-        color: #cfcfcf;
-    }
-    .footer-text i {
-        margin-right: 5px;
-    }
-    .animate-drop-init {
-        position: relative;
-        top: -10px;
-        opacity: 0;
-    }
-    .animate-show-init {
-        opacity: 0;
-    }
-    </style>
   </head>
   <body>
-    <div class="container intro">
-      <div class="row">
-        <div class="col-lg-12">
+    <div class="container-fluid">
+      <div class="row fill-height">
+        <div id="intro-main" class="fill-height col-md-12">
           <div class="intro-content">
-            <img src="/assets/images/me.jpg" class="img-circle" alt="author thumb" class="dot">
+            <img src="/assets/images/me.jpg" alt="author thumb" class="dot">
             <h2 class="animate-drop-init">{{site.author}}</h2>
             <!--<h2 class="animate-drop-init">蔡育倫</h2>-->
             <div class="summary animate-drop-init">
               Master of Software Engineering from Carnegie Mellon <br>
-              with 1+ year experience in IoT development.<br> 
-              Aim to build impactful products and solve real world challenges. 
+              with 1+ year experience in IoT development.<br>
+              Aim to build impactful products and solve real world challenges.
             </div>
             <div class="menu">
               <a href="{{ site.github }}" class="animate-drop-init">GitHub</a>
-              <a href="/blog.html" class="animate-drop-init">Blog</a>
+              <a href="/blog/" class="animate-drop-init">Blog</a>
               <a href="/assets/pdf/resume.pdf" class="animate-drop-init">Resume</a>
               <a href="{{ site.linkedin }}" class="animate-drop-init">LinkedIn</a>
             </div>
@@ -119,35 +61,31 @@
     <script>
 
     $(document).ready(function () {
-        var delay = 1;
-        var DELAY_STEP = 200;
-        var animationOptions = { opacity: 1, top: 0};
+      var delay = 1;
+      var DELAY_STEP = 200;
+      var animationOptions = { opacity: 1, top: 0};
 
-        $('h2').animate(animationOptions).promise()
+      $('h2').animate(animationOptions).promise()
                 .pipe(animateMain)
                 .pipe(animateLocationIcon);
-        
-        function animateMain() {
-            var dfd = $.Deferred();
-            var els = $('.animate-drop-init');
-            var size = els.size();
-            
-            els.each(function (index, el) {
-                delay++;
-                $(el).delay(index * DELAY_STEP)
-                        .animate(animationOptions);
-                (size - 1 === index) && dfd.resolve();
-            });
-            return dfd.promise();
-        }
 
-        function animateLocationIcon() {
-            $('.animate-show-init').delay(delay * DELAY_STEP).animate({
-                opacity: 1,
-            }).promise();
-        }
+      function animateMain() {
+        var dfd = $.Deferred();
+        var els = $('.animate-drop-init');
+        var size = els.size();
+
+        els.each(function (index, el) {
+          delay++;
+          $(el).delay(index * DELAY_STEP).animate(animationOptions);
+          (size - 1 === index) && dfd.resolve();
+        });
+        return dfd.promise();
+      }
+
+      function animateLocationIcon() {
+        $('.animate-show-init').delay(delay * DELAY_STEP).animate({opacity: 1,}).promise();
+      }
     });
-
     </script>
   </body>
 </html>
