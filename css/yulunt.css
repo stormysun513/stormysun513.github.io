@@ -6,6 +6,10 @@ body {
 .fill-height {
     height: 100%
 }
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
 .container-fluid {
     height: inherit;
 }

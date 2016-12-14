@@ -9,12 +9,13 @@
 title: Yu-Lun (Larry) Tsai
 author: Yu-Lun Tsai
 email: yulunt@andrew.cmu.edu
+
 # Permalinks
-permalink:        "/blog/:month-:day-:year/:title.html"
+permalink: "/blog/:month-:day-:year/:title.html"
 
 description: > # this means to ignore newlines until "baseurl:"
   Work hard, stay positive, and get up early. It's the best part of the day.
-baseurl:          "/"
+baseurl: "/"
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: stormysun513
 github_username:  stormysun513
