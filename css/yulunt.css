@@ -3,6 +3,11 @@ body {
     width: 100%;
     position: absolute;
 }
+sup {
+    color: #afafaf;
+    display: block;
+    vertical-align: text-top;
+}
 .fill-height {
     height: 100%
 }
@@ -87,4 +92,21 @@ body {
 }
 .animate-show-init {
     opacity: 0;
+}
+
+.experience-section {
+    margin-top: 40px;
+}
+.experience-item {
+    margin-top: 20px;
+}
+.experience-item p {
+    margin: 0;
+}
+
+.title {
+    margin-bottom: 0;
+}
+.title a:visited {
+    color: #000;
 }
