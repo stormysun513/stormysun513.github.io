@@ -8,53 +8,129 @@ permalink: /project/
 		<h1 class="post-title">Projects</h1>
 	</header>
 
-  <section class="projects-section">
+  <section class="project-group">
     <sup>2016</sup>
-		<div class="projects-item">
-			<h4><a href="http://54.244.78.192/">CookByYourself</a></h4>
-			<p> A website that collects recipes from different websites and estimates
-      prices required to make a particular dish. </p>
-		</div>
-    <div class="projects-item">
-			<h4>Realtime Resource Reservation Framework</h4>
-			<p> A Linux kernel module cooperating with several system calls to provide
-      interfaces for developers to reserve their application based on either
-      timing, cpu, and power constraints. </p>
-		</div>
+    <div class="project-section">
+  		<div class="project-summary">
+  			<h4>CookByYourself</h4>
+  			<p>
+        A website that collects recipes from different websites and estimates
+        prices required to make a particular dish.
+        <span id="project-url" hidden><br>
+          <a href="http://54.244.78.192/">
+            website: CookByYourself
+          </a>
+        </span>
+        </p>
+  		</div>
+      <div id="project-detail" hidden>
+        <div class="project-media">
+          <div class="media-container">
+            <img src="/assets/images/project-cook-1.png"></img>
+          </div>
+        </div>
+        <div class="project-media">
+          <div class="media-container">
+            <img src="/assets/images/project-cook-2.png"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-section">
+      <div class="project-summary">
+  			<h4>Realtime Resource Reservation Framework</h4>
+  			<p> A Linux kernel module cooperating with several system calls to provide
+        interfaces for developers to reserve their application based on either
+        timing, cpu, and power constraints. </p>
+  		</div>
+    </div>
 	</section>
 
-  <section class="projects-section">
+  <section class="project-group">
     <sup>2015</sup>
-		<div class="projects-item">
-			<h4><a href="http://dl.acm.org/citation.cfm?id=2858185">KeDiary</a></h4>
-      <p> A phone-based support system (KeDiary) with Bluetooth-enabled device
-      for the screening of saliva, as a means of assisting
-      ketamine-dependent patients to self-monitor their ketamine use
-      following acute withdrawal treatment. </p>
-		</div>
-    <div class="projects-item">
-			<h4>BioScope</h4>
-			<p> A flexible bandage-like device that collects physiological data with
-      sensors and display data on an embedded OLED module, which overcomes
-      position constraints exposed by existing wearable devices. </p>
-		</div>
+    <div class="project-section">
+  		<div class="project-summary">
+  			<h4>KeDiary</h4>
+        <p>
+        A phone-based support system (KeDiary) with Bluetooth-enabled device
+        for the screening of saliva, as a means of assisting
+        ketamine-dependent patients to self-monitor their ketamine use
+        following acute withdrawal treatment.
+        <span id="project-url" hidden><br>
+          <a href="http://dl.acm.org/citation.cfm?id=2858185">
+            http://dl.acm.org/citation.cfm?id=2858185
+          </a>
+        </span>
+        </p>
+  		</div>
+      <div id="project-detail" hidden>
+        <div class="project-media">
+          <div class="media-container">
+            <iframe src="https://www.youtube.com/embed/LZR_Mv1q_V0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-section">
+      <div class="project-summary">
+  			<h4>BioScope</h4>
+  			<p> A flexible bandage-like device that collects physiological data with
+        sensors and display data on an embedded OLED module, which overcomes
+        position constraints exposed by existing wearable devices. </p>
+  		</div>
+    </div>
 	</section>
 
-  <section class="projects-section">
+  <section class="project-group">
     <sup>2014</sup>
-		<div class="projects-item">
-			<h4>Deep Learning in Speech Recognition</h4>
-      <p> Explored deep neural network method on speech recognition with MFCC
-      extracted from raw audio data as input and sentences as output. </p>
-		</div>
+    <div class="project-section">
+  		<div class="project-summary">
+  			<h4>Deep Learning in Speech Recognition</h4>
+        <p> Explored deep neural network method on speech recognition with MFCC
+        extracted from raw audio data as input and sentences as output. </p>
+  		</div>
+    </div>
 	</section>
 
-  <section class="projects-section">
+  <section class="project-group">
     <sup>2013</sup>
-		<div class="projects-item">
-			<h4>Functionally Reduced And-Inverter Gates Simulator</h4>
-      <p> An circuit optimization application running on Linux that accepts AIG
-      format files and reduces required logic gates. </p>
-		</div>
+    <div class="project-section">
+  		<div class="project-summary">
+  			<h4>Functionally Reduced And-Inverter Gates Simulator</h4>
+        <p> An circuit optimization application running on Linux that accepts AIG
+        format files and reduces required logic gates. </p>
+  		</div>
+    </div>
 	</section>
 </artivle>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  console.log( "I'm Yu-Lun, Welcome!" );
+
+  $('.project-group h4').click(function() {
+    var detail = $(this).parent().parent().find("#project-detail");
+    var url = $(this).parent().find("#project-url");
+
+    if(url != null){
+      if(url.attr('hidden') == null){
+        url.prop('hidden', true).fadeOut();
+      }
+      else{
+        url.removeAttr('hidden').fadeIn();
+      }
+    }
+
+    if(detail != null){
+      if(detail.attr('hidden') == null){
+        detail.prop('hidden', true).fadeOut();
+      }
+      else{
+        detail.removeAttr('hidden').fadeIn();
+      }
+    }
+  });
+});
+</script>
