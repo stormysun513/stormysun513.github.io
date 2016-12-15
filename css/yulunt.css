@@ -94,13 +94,11 @@ sup {
     opacity: 0;
 }
 
-.projects-section {
-    margin-top: 40px;
-}
-
+.projects-section,
 .experience-section {
     margin-top: 40px;
 }
+
 .experience-item {
     margin-top: 20px;
 }
@@ -111,6 +109,8 @@ sup {
 .title {
     margin-bottom: 0;
 }
+.title a,
+.title a:hover,
 .title a:visited {
     color: #000;
 }
