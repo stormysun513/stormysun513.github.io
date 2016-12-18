@@ -153,5 +153,44 @@ sup {
 .title a,
 .title a:hover,
 .title a:visited {
-    color: #000;
+    color: #646464;
+}
+
+.post-tag {
+    display: inline-block;
+    background: rgba(106,106,106,0.15);
+    padding: 0 .5rem;
+    margin-right: .5rem;
+    border-radius: 4px;
+    color: #515151;
+    font-family: "PT Sans",Helvetica,Arial,sans-serif;
+    font-size: 95%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.post-tag:visited {
+    color: #515151;
+}
+.post-tag:hover {
+    text-decoration: none;
+    background: #c0c0c0;
+    color: #fff;
+}
+.post-tag:before {
+    content: "\f02b";
+    font-family: FontAwesome;
+    padding-right: .5em;
+}
+.tags-expo .tags-expo-section ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 0;
+}
+.post-list-title {
+    margin-top: 1.5rem;
+    margin-right: 1.0rem;
+    font-size: 1.25rem;
+    letter-spacing: -1px;
+    line-height: 1;
 }
