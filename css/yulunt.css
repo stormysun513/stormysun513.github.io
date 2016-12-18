@@ -32,14 +32,14 @@ sup {
         margin: 0 auto;
     }
 }
-#intro-sidebar h2 {
+#intro-sidebar h2,
+.intro-content {
     color: #c0c0c0;
 }
 #intro-sidebar .sidebar-nav {
     margin-top: 30px;
 }
 .intro-content {
-    color: #c0c0c0;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -105,14 +105,14 @@ sup {
     border-bottom: 1px solid #FFF;
 }
 .project-group h4:hover {
-    color: black;
-    border-bottom: 1px solid #000;
+    text-decoration: underline;
     cursor: pointer;
 }
 .project-section {
     margin-bottom: 16px;
 }
-.project-section p {
+.project-section p,
+.experience-item p {
     margin-bottom: 0;
 }
 .project-media {
@@ -143,17 +143,31 @@ sup {
 .experience-item {
     margin-top: 20px;
 }
-.experience-item p {
-    margin: 0;
-}
 
 .title {
     margin-bottom: 0;
 }
 .title a,
+/*.title a:hover,*/
+.title a:visited,
+.experience-section h3,
+.tags-expo-section,
+.project-group h4,
+.post-list-title,
+.post-list-title:visited {
+    color: #7f7f7f;
+}
+.post-title,
+.tags-expo-section h3,
 .title a:hover,
-.title a:visited {
-    color: #646464;
+.project-group h4:hover,
+.post-list-title:hover {
+    color: #444444;
+}
+.title a:hover,
+.project-group h4:hover,
+.post-list-title:hover {
+    text-decoration:none;
 }
 
 .post-tag {
@@ -162,13 +176,13 @@ sup {
     padding: 0 .5rem;
     margin-right: .5rem;
     border-radius: 4px;
-    color: #515151;
     font-family: "PT Sans",Helvetica,Arial,sans-serif;
     font-size: 95%;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
+.post-tag,
 .post-tag:visited {
     color: #515151;
 }
@@ -187,10 +201,13 @@ sup {
     list-style-position: inside;
     padding: 0;
 }
+.post-title {
+    font-size: 36px;
+}
 .post-list-title {
     margin-top: 1.5rem;
     margin-right: 1.0rem;
-    font-size: 1.25rem;
+    font-size: 1.0rem;
     letter-spacing: -1px;
     line-height: 1;
 }
