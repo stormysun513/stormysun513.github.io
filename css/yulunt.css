@@ -31,6 +31,9 @@ sup {
     #intro-sidebar img {
         margin: 0 auto;
     }
+    .mobile-hide { 
+        display: none; 
+    }
 }
 #intro-sidebar h2,
 .intro-content {
