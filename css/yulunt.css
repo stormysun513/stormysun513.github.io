@@ -43,9 +43,6 @@ sup {
     width: 140px;
     border-radius: 50%;
 }
-/* .intro-summary { */
-/*     margin-top: 20px; */
-/* } */
 .menu {
     margin-top: 40px;
     font-size: 14px;
@@ -64,22 +61,23 @@ sup {
 .footer-text {
     display: inline-block;
     vertical-align: top;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .menu a,
 .sidebar-nav a,
 .footer-text a {
-    color: #c0c0c0;
+    color: #b0b0b0;
 }
 .menu a:hover,
 .sidebar-nav a:hover,
 .footer-text a:hover {
     text-decoration: none;
-    color: #eee;
+    color: #fff;
 }
 .sidebar-nav .not-active {
-    color: #eee;
+    color: #fff;
 }
 
 .footer-text i {
@@ -217,7 +215,10 @@ sup {
     .mobile-hide { 
         display: none; 
     }
-    .summary {
+    .intro-content h2 {
+        font-size: 36px;
+    }
+    .intro-content .summary {
         margin-top: 30px;
         margin-right: 5%;
         margin-left: 5%;
