@@ -27,14 +27,6 @@ sup {
     background: url(/assets/images/sidebar-bg.jpg) no-repeat center;
     background-size: cover;
 }
-@media screen and (max-width: 768px) {
-    #intro-sidebar img {
-        margin: 0 auto;
-    }
-    .mobile-hide { 
-        display: none; 
-    }
-}
 #intro-sidebar h2,
 .intro-content {
     color: #c0c0c0;
@@ -51,12 +43,11 @@ sup {
     width: 140px;
     border-radius: 50%;
 }
-.intro-summary {
-    margin-top: 20px;
-}
+/* .intro-summary { */
+/*     margin-top: 20px; */
+/* } */
 .menu {
     margin-top: 40px;
-    text-align: center;
     font-size: 14px;
 }
 .menu a {
@@ -213,4 +204,25 @@ sup {
     font-size: 1.0rem;
     letter-spacing: -1px;
     line-height: 1;
+}
+
+/* Handle responsiveness */
+
+@media screen and (max-width: 768px) {
+    #intro-sidebar img {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 425px) {
+    .mobile-hide { 
+        display: none; 
+    }
+    .summary {
+        margin-top: 30px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .menu {
+        font-size: 18px;
+    }
 }
