@@ -204,6 +204,12 @@ sup {
     line-height: 1;
 }
 
+/* exclude no-expansion from changing text */
+.no-expansion h4:hover {
+    color: #7f7f7f;
+    cursor: auto;
+}
+
 /* Handle responsiveness */
 
 @media screen and (max-width: 768px) {
