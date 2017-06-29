@@ -161,7 +161,6 @@ sup {
 .post-list-title:hover {
     text-decoration:none;
 }
-
 .post-tag {
     display: inline-block;
     background: rgba(106,106,106,0.15);
@@ -218,8 +217,8 @@ sup {
     }
 }
 @media screen and (max-width: 425px) {
-    .mobile-hide { 
-        display: none; 
+    .mobile-hide {
+        display: none;
     }
     .intro-content h2 {
         font-size: 36px;
