@@ -25,11 +25,11 @@
     <![endif]-->
   </head>
   <body>
-    <div id="intro-main" class="fill-height">
-      <div class="intro-content">
+    <div id="background-index" class="fill-height">
+      <div class="profile-content">
         <img src="{{"assets/images/me.jpg"|prepend:site.baseurl}}" alt="author thumb">
         <h2 class="animate-drop-init">{{site.author}}</h2>
-        <div class="summary animate-drop-init">
+        <div class="profile-summary animate-drop-init">
           Excited about developing self-driving cars that makes our life more convenience and safer.<br>
           Had 1+ year experience in IoT data acquisition pipeline and mobile application.<br class="mobile-hide">
           Graduate student of Software Engineering at Carnegie Mellon University.
@@ -83,8 +83,10 @@
       }
     });
     </script>
+
     {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
+
   </body>
 </html>

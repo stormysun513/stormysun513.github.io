@@ -16,7 +16,9 @@ permalink: "/blog/:month-:day-:year/:title.html"
 description: > # this means to ignore newlines until "baseurl:"
   Work hard, stay positive, and get up early. It's the best part of the day.
 baseurl: "/"
-url: "yulunt.me" # the base hostname & protocol for your site
+
+# the base hostname & protocol for your site
+url: "yulunt.me"
 twitter_username: stormysun513
 github_username:  stormysun513
 

@@ -4,22 +4,38 @@ title: Project
 permalink: /project/
 ---
 <article id="projects">
+
   <header class="post-header">
 		<h1 class="post-title">Projects</h1>
 	</header>
 
-
   <section class="project-group">
+
     <sup>2017</sup>
+
+    <div class="project-section">
+  		<div class="project-summary">
+        <a href="/project/autonomous-driving-simulation.html">
+  			  <h4>Autonomous Driving Vehicle Simulation</h4>
+        </a>
+  			<p>
+        The objective of this project is to design a state chart for an
+        autonomous driving vehicle that follows traffic rules and acts safely
+        as if there is a human operator sitting in the driver’s seat. Simulink
+        and Stateflow are used to validate the design of the state chart.
+        </p>
+  		</div>
+    </div>
+
     <div class="project-section">
   		<div class="project-summary">
   			<h4>ParGMRES - A Parallel Linear Solver</h4>
   			<p>
-        The goal of project is to explore parallel techniques we learned in 
-        the class. We implemented our own general minimal residual algorithm 
-        and parallelized it using both OpenMP and CUDA. GMRES is an iterative 
-        method to solve linear system Ax = b. Due to its iterative fashion, 
-        the algorithm is inherently sequential. What we focus is to parallelize 
+        The goal of project is to explore parallel techniques we learned in
+        the class. We implemented our own general minimal residual algorithm
+        and parallelized it using both OpenMP and CUDA. GMRES is an iterative
+        method to solve linear system Ax = b. Due to its iterative fashion,
+        the algorithm is inherently sequential. What we focus is to parallelize
         those matrix operations.
         <span id="project-url" hidden><br>
           <a href="http://yulunt.me/ParGMRES">
@@ -34,10 +50,10 @@ permalink: /project/
   		<div class="project-summary">
   			<h4>Image Classification Using Labeled and Unlabeled Data</h4>
   			<p>
-        This project is to improve performance of image classification using 
-        unlabeled image data. The dataset is cifar-10 with 5000 labeled images, 
-        45000 unlabeled images,  and 10000 images for testing. I tried two methods 
-        to solve this problem. The first one is to use Kmeans with spatial pyramid 
+        This project is to improve performance of image classification using
+        unlabeled image data. The dataset is cifar-10 with 5000 labeled images,
+        45000 unlabeled images,  and 10000 images for testing. I tried two methods
+        to solve this problem. The first one is to use Kmeans with spatial pyramid
         matching while the second one use CNN with self-training approach.
         </p>
   		</div>
@@ -46,15 +62,17 @@ permalink: /project/
 	</section>
 
   <section class="project-group">
+
     <sup>2016</sup>
+
     <div class="project-section">
   		<div class="project-summary">
   			<h4>CookByYourself</h4>
   			<p>
-        A website that collects recipes from different websites and estimates 
-        prices required to make them. Our web server is developed using Django 
+        A website that collects recipes from different websites and estimates
+        prices required to make them. Our web server is developed using Django
         framework with PostgreSQL. Users are able to register an account, comments,
-        and search recipes. Data are crawled using Selenium and python 
+        and search recipes. Data are crawled using Selenium and python
         BeautifulSoup library.
         <span id="project-url" hidden><br>
           <a href="http://54.244.78.192/">
@@ -79,13 +97,13 @@ permalink: /project/
     <div class="project-section no-expansion">
       <div class="project-summary">
   			<h4>Realtime Resource Reservation Framework</h4>
-  			<p> 
-        We built an energy-aware resource reservation framework in Linux 
-        kernel. Users are able to specify timing constraints of tasks and 
-        their corresponding periods. The system will then schedule these 
-        tasks based on these constraints while still running other tasks 
-        maintained by Linux OS at the same time. We also made a android 
-        application able to log framework configuration and status of 
+  			<p>
+        We built an energy-aware resource reservation framework in Linux
+        kernel. Users are able to specify timing constraints of tasks and
+        their corresponding periods. The system will then schedule these
+        tasks based on these constraints while still running other tasks
+        maintained by Linux OS at the same time. We also made a android
+        application able to log framework configuration and status of
         these tasks using android NDK.
         </p>
   		</div>
@@ -131,10 +149,10 @@ permalink: /project/
       <div class="project-summary">
   			<h4>Deep Learning in Speech Recognition</h4>
         <p>
-        The project is to build a speech recognition system predicting English 
-        sentences from speech data using deep learning techniques. A speech 
-        recognition system comprises of two parts: acoustic feature 
-        transformation and the language construction. We used a deep neural 
+        The project is to build a speech recognition system predicting English
+        sentences from speech data using deep learning techniques. A speech
+        recognition system comprises of two parts: acoustic feature
+        transformation and the language construction. We used a deep neural
         network and structured SVM for acoustic part and used recurrent neural
         network to rescore the possible output generated by the WFST algorithm.
         <span id="project-url" hidden><br>
@@ -176,11 +194,11 @@ permalink: /project/
     <div class="project-section no-expansion">
   		<div class="project-summary">
   			<h4>Functionally Reduced And-Inverter Gates Simulator</h4>
-        <p> 
-        An optimization tool that reads a circuit represented in an acyclic 
+        <p>
+        An optimization tool that reads a circuit represented in an acyclic
         graph and remove redundant subgraphs. We are asked to manage memory
         allocation of these components in the graph by overriding the new and
-        delete operation in C++. Graph traversal approach like BFS and DFS 
+        delete operation in C++. Graph traversal approach like BFS and DFS
         are used to find unreachable gates and propagate simulation results.
         Explicit free lists are used to chain available memories for management.
         </p>
@@ -190,7 +208,7 @@ permalink: /project/
 </artivle>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
   console.log( "I'm Yu-Lun, Welcome!" );
@@ -218,4 +236,4 @@ $(document).ready(function() {
     }
   });
 });
-</script>
+</script> -->

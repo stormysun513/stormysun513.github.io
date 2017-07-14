@@ -1,18 +1,23 @@
-<div id="intro-sidebar" class="sidebar">
+<div id="background-sidebar" class="sidebar">
+
   <div class="container sidebar-sticky">
 
-    <div class="intro-content">
+    <div class="profile-content">
       <img src="/assets/images/me.jpg" class="img-circle" alt="author thumb" class="dot">
       <h2 class="">{{site.author}}</h2>
-      <div class="summary">{{site.description}}</div>
-      <nav class="sidebar-nav">
-        <a class="sidebar-nav-item" href="{{ site.baseurl }}">Home</a>
-        <a class="sidebar-nav-item{% if page.url == "/blog/" %} not-active{% endif %}" href="/blog/">Blog</a>
-        <a class="sidebar-nav-item{% if page.url == "/experience/" %} not-active{% endif %}" href="/experience/">Experience</a>
-        <a class="sidebar-nav-item{% if page.url == "/project/" %} not-active{% endif %}" href="/project/">Projects</a>
-        <a class="sidebar-nav-item{% if page.url == "/about/" %} not-active{% endif %}" href="/about/">About</a>
-      </nav>
+      <div class="profile-summary">{{site.description}}</div>
     </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="{{ site.baseurl }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == "/blog/" %} nav-not-active{% endif %}" href="/blog/">Blog</a>
+      <a class="sidebar-nav-item{% if page.url == "/experience/" %} nav-not-active{% endif %}" href="/experience/">Experience</a>
+      <a class="sidebar-nav-item{% if page.url == "/project/" %} nav-not-active{% endif %}" href="/project/">Projects</a>
+      <a class="sidebar-nav-item{% if page.url == "/about/" %} nav-not-active{% endif %}" href="/about/">About</a>
+    </nav>
+
     <p>&copy; {{site.time|date:'%Y'}}. All rights reserved.</p>
+
   </div>
+
 </div>

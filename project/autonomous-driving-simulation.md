@@ -1,0 +1,37 @@
+---
+layout: post
+title:  Autonomous Driving Simulation
+date:   2017-07-14 12:16:52 -0500
+categories: Project
+tags: [Autonomous Driving,]
+permalink: /project/autonomous-driving-simulation.html
+comments: true
+---
+
+Autonomous driving, considered only as science fiction a few years ago, has gotten more and more attention with the evolution of related technology. It is regarded as one of the solutions to reduce human labor costs and increase the overall road usage efficiency. Despite these attractive advantages, people still have concerns about its safety issues. If they are passengers, they would like to know whether an autonomous car can protect them from an accident. If there are pedestrians, they want to make sure it won’t bump into them.
+
+
+In this project, I work on
+
+- Designing a state chart utility that specifies the behavioral actions of a self-driving vehicle in a set of driving contexts
+- Simulating the state machines on a virtual car in a virtual environment.
+
+<!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/ -->
