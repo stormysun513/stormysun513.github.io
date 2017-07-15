@@ -8,7 +8,7 @@ permalink: /project/autonomous-driving-simulation.html
 comments: true
 ---
 
-Autonomous driving, considered only as science fiction a few years ago, has gotten more and more attentions with the evolution of related technologies. It is regarded as one of the solutions to human labor cost reduction and overall road usage efficiency. Despite these attractive advantages, people still concern about the safety issues. While they are sitting inside the car, they want the autonomous driving car can protect them from an accident. While they are crossing the road, they want to make sure it won’t bump into them.
+Autonomous driving, considered only as science fiction a few years ago, has gotten more and more attentions with the evolution of related technologies. It is regarded as one of the solutions to human labor cost reduction and overall road usage efficiency. Despite these attractive advantages, people still concern about the safety issues. While they are sitting inside the car, they hope that the autonomous driving car can protect them from an accident. While they are crossing the road, they hope that it won’t bump into them.
 
 
 In this project, I worked on
@@ -48,7 +48,11 @@ The following video shows a simple simulation with multiple pedestrian and cars 
 
 
 <p align="center">
+<div class="video-container">
+<div class="video-wrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mWpOn0OVAvY" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
 </p>
 
 

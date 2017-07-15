@@ -212,6 +212,31 @@ sup {
 
 /* Handle responsiveness */
 
+.video-container {
+    margin: 0 auto;
+    max-width: 560px;
+}
+
+.video-wrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width: 768px) {
 
     #background-sidebar img {
