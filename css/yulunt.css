@@ -93,12 +93,12 @@ sup {
     opacity: 0;
 }
 
-.project-group h4 {
+.project-group h3 {
     display: inline-block;
     border-bottom: 1px solid #FFF;
 }
-.project-group h4:hover {
-    text-decoration: underline;
+.project-group h3:hover {
+    /*text-decoration: underline;*/
     cursor: pointer;
 }
 .project-section {
@@ -145,7 +145,7 @@ sup {
 .title a:visited,
 .experience-section h3,
 .tags-expo-section,
-.project-group h4,
+.project-group h3,
 .post-list-title,
 .post-list-title:visited {
     color: #7f7f7f;
@@ -153,12 +153,12 @@ sup {
 .post-title,
 .tags-expo-section h3,
 .title a:hover,
-.project-group h4:hover,
+.project-group h3:hover,
 .post-list-title:hover {
     color: #444444;
 }
 .title a:hover,
-.project-group h4:hover,
+.project-group h3:hover,
 .post-list-title:hover {
     text-decoration:none;
 }
@@ -205,7 +205,7 @@ sup {
 }
 
 /* exclude no-expansion from changing text */
-.no-expansion h4:hover {
+.no-expansion h3:hover {
     color: #7f7f7f;
     cursor: auto;
 }
@@ -237,7 +237,8 @@ sup {
     height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 48em) {
 
     #background-sidebar img {
         margin: 0 auto;
@@ -252,7 +253,7 @@ sup {
         margin-bottom: 2.5%;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 26em) {
 
     .mobile-hide {
         display: none;
@@ -266,6 +267,6 @@ sup {
         margin-left: 5%;
     }
     .menu {
-        font-size: 18px;
+        font-size: 16px;
     }
 }

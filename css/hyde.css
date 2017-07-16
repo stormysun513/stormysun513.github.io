@@ -141,6 +141,13 @@ a.sidebar-nav-item:focus {
   }
 }
 
+/* handle mobile display */
+@media (max-width: 48em) {
+  .content {
+    padding-top:    4rem;
+    padding-bottom: 1rem;
+  }
+}
 
 /*
  * Reverse layout
