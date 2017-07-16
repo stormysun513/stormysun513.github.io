@@ -10,10 +10,10 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item" href="{{ site.baseurl }}">Home</a>
-      <a class="sidebar-nav-item{% if page.url == "/blog/" %} nav-not-active{% endif %}" href="/blog/">Blog</a>
-      <a class="sidebar-nav-item{% if page.url == "/experience/" %} nav-not-active{% endif %}" href="/experience/">Experience</a>
-      <a class="sidebar-nav-item{% if page.url == "/project/" %} nav-not-active{% endif %}" href="/project/">Projects</a>
-      <a class="sidebar-nav-item{% if page.url == "/about/" %} nav-not-active{% endif %}" href="/about/">About</a>
+      <a class="sidebar-nav-item{% if page.url contains "/blog/" %} nav-not-active{% endif %}" href="/blog/">Blog</a>
+      <a class="sidebar-nav-item{% if page.url contains "/experience/" %} nav-not-active{% endif %}" href="/experience/">Experience</a>
+      <a class="sidebar-nav-item{% if page.url contains "/project/" %} nav-not-active{% endif %}" href="/project/">Projects</a>
+      <a class="sidebar-nav-item{% if page.url contains "/about/" %} nav-not-active{% endif %}" href="/about/">About</a>
     </nav>
 
     <p>&copy; {{site.time|date:'%Y'}}. All rights reserved.</p>
