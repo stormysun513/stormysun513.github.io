@@ -6,13 +6,13 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}assets/images/favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}css/main.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}css/hyde.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}css/yulunt.css">
+  <link rel="stylesheet" href="{{"css/main.css"| prepend: site.base_url  }}">
+  <link rel="stylesheet" href="{{"css/poole.css"| prepend: site.base_url }}">
+  <link rel="stylesheet" href="{{"css/syntax.css"| prepend: site.base_url }}">
+  <link rel="stylesheet" href="{{"css/hyde.css"| prepend: site.base_url }}">
+  <link rel="stylesheet" href="{{"css/yulunt.css"| prepend: site.base_url }}">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
   <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
