@@ -8,6 +8,10 @@ sup {
     display: block;
     vertical-align: text-top;
 }
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
 .fill-height {
     height: 100%
 }

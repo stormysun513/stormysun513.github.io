@@ -2,21 +2,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
+  <title>{% if page.title %}{{ page.title |escape }}{% else %}{{ site.title |escape }}{% endif %}</title>
+  <link rel="shortcut icon" type="image/png" href="{{ "assets/images/favicon.ico"|prepend: site.base_url}}">
 
-  <link rel="stylesheet" href="{{"css/main.css"| prepend: site.base_url  }}">
-  <link rel="stylesheet" href="{{"css/poole.css"| prepend: site.base_url }}">
-  <link rel="stylesheet" href="{{"css/syntax.css"| prepend: site.base_url }}">
-  <link rel="stylesheet" href="{{"css/hyde.css"| prepend: site.base_url }}">
-  <link rel="stylesheet" href="{{"css/yulunt.css"| prepend: site.base_url }}">
+  <link rel="stylesheet" href="{{"css/main.css"|prepend: site.base_url  }}">
+  <link rel="stylesheet" href="{{"css/poole.css"|prepend: site.base_url }}">
+  <link rel="stylesheet" href="{{"css/syntax.css"|prepend: site.base_url }}">
+  <link rel="stylesheet" href="{{"css/hyde.css"|prepend: site.base_url }}">
+  <link rel="stylesheet" href="{{"css/yulunt.css"|prepend: site.base_url }}">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
-  <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" |prepend: site.base_url |prepend: site.url }}">
   <!-- Bootstrap -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

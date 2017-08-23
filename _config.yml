@@ -13,8 +13,7 @@ email: yulunt@andrew.cmu.edu
 # Permalinks
 permalink: "/blog/:month-:day-:year/:title.html"
 
-description: > # this means to ignore newlines until "baseurl:"
-  Work hard, stay positive, and get up early. It's the best part of the day.
+description: Work hard, stay positive, and get up early. It's the best part of the day.
 
 baseurl: "/"
 base_url: "/"
@@ -26,6 +25,8 @@ github_username:  stormysun513
 
 # Build settings
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 
 github: https://github.com/stormysun513
 linkedin: https://www.linkedin.com/in/yuluntsai
