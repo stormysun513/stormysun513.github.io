@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Android Data Preparation Framework for Identifying User Preferences and Interests
-date:   2017-08-13 00:33:52 -0500
+date:   2017-08-20 00:33:52 -0500
 categories: Project
 tags: [Android, Software Engineering]
 permalink: /project/bezirk-data-preparation-framework.html
@@ -87,6 +87,19 @@ match.
 ![data flow diagram][dndi-dataflow-diagram]{:width="90%"}
 
 
-[dndi-context-diagram]: /assets/images/dndi-context-diagram.jpg#center "Context Diagram"
-[dndi-what-is-a-zirk]: /assets/images/dndi-what-is-a-zirk.jpg#center "What is a zirk"
-[dndi-dataflow-diagram]: /assets/images/dndi-dataflow-diagram.jpg#center "Dataflow Diagram"
+Other than functional features of our framework, we also came up with an example
+business use case demonstrating how an Android application can use our product
+to infer user preference. One may check the following youtube video for more
+details.
+
+
+<div class="video-container">
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZY0XypcFOjs" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+
+[dndi-context-diagram]: /assets/images/dndi-context-diagram.jpg#center
+[dndi-what-is-a-zirk]: /assets/images/dndi-what-is-a-zirk.jpg#center
+[dndi-dataflow-diagram]: /assets/images/dndi-dataflow-diagram.jpg#center

@@ -46,13 +46,12 @@ This approach makes dealing with priorities easier but it has a potential proble
 
 The following video shows a simple simulation with multiple pedestrian and cars in the environment. The one that is labeled 2 is the autonomous driving car while the others are so-called ego vehicles, which drive selfishly and do not always follow traffic rules. The idea here is an intelligent vehicles should protect itself and minimize threats even if others do not have a current behavior.
 
-<p align="center">
+
 <div class="video-container">
 <div class="video-wrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mWpOn0OVAvY" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
-</p>
 
 
 [hfsm1]: /assets/images/hfsm1.jpg "State chart 1"
