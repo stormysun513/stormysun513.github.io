@@ -27,15 +27,15 @@ The following snapshots illustrate my state chart architecture design, which was
 
 
 This one shows how does the decision unit make decision when a vehicle approaches a road intersection.
-![state chart architecture 1][hfsm1]
+![state chart architecture 1][adv-statechart1]
 
 
 The state chart is able to handle different kind of trajectory planning. As you can see, different trajectories are comprised of different state transition rules. The complexity is different as well.
-![state chart architecture 2][hfsm2]
+![state chart architecture 2][adv-statechart2]
 
 
 Other than the autonomous driving car, other objects in the environment can also be modeled using state chart.
-![simulation setting][simulation]
+![simulation setting][adv-simulation-workspace]
 
 
 This design adopts a hierarchical finite state machine design, which is good at handling inputs with different priorities. Assume that the cost of bumping into a pedestrian is always higher than the fine for violating traffic rules. In this case, we want the state chart to behave in a way that always checks pedestrians first and checks the traffic rule later. How could we design a state chart to capture this behavior? The idea is to make pedestrian checking as a transition of parent states and the traffic rules are transitions for the child states. Every time the state machine wakes up, it always checks the pedestrian first.
@@ -54,26 +54,6 @@ The following video shows a simple simulation with multiple pedestrian and cars 
 </div>
 
 
-[hfsm1]: /assets/images/hfsm1.jpg "State chart 1"
-[hfsm2]: /assets/images/hfsm2.jpg "State chart 2"
-[simulation]: /assets/images/simulation.jpg "Simulink workspace"
-
-<!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/ -->
+[adv-statechart1]: /assets/images/adv-statechart1.jpg "State chart 1"
+[adv-statechart2]: /assets/images/adv-statechart2.jpg "State chart 2"
+[adv-simulation-workspace]: /assets/images/adv-simulation-workspace.jpg "Simulink workspace"
