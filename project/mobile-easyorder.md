@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Web Application - EasyOrder
+title:  Mobile Application - EasyOrder
 date:   2017-08-23 00:13:52 -0500
 categories: Project
 tags: [Android, Objective C, Django]
