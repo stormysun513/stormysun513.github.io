@@ -11,7 +11,7 @@
     <title>{{ site.title }}</title>
 
     <link rel="shortcut icon" type="image/png" href="{{"assets/images/favicon.ico"|prepend:site.base_url}}">
-    <link rel="stylesheet" href="{{"css/yulunt.css"|prepend:site.baseurl}}">
+    <link rel="stylesheet" href="{{"css/yulunt.css"|prepend:site.base_url}}">
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
   <body>
     <div id="background-index" class="fill-height">
       <div class="profile-content">
-        <img src="{{"assets/images/me.jpg"|prepend:site.baseurl}}" alt="author thumb">
+        <img src="{{"assets/images/me.jpg"|prepend:site.base_url}}" alt="author thumb">
         <h2 class="animate-drop-init">{{site.author}}</h2>
         <div class="profile-summary animate-drop-init">
           Excited about developing complex but high quality software.<br>
@@ -36,8 +36,8 @@
         </div>
         <div class="menu">
           <a href="{{ site.github }}" class="animate-drop-init">GitHub</a>
-          <a href="{{"blog/"|prepend:site.baseurl}}" class="animate-drop-init">Blog</a>
-          <a href="{{"project/"|prepend:site.baseurl}}" class="animate-drop-init">Projects</a>
+          <a href="{{"blog/"|prepend:site.base_url}}" class="animate-drop-init">Blog</a>
+          <a href="{{"project/"|prepend:site.base_url}}" class="animate-drop-init">Projects</a>
           <a href="{{ site.linkedin }}" class="animate-drop-init">LinkedIn</a>
         </div>
         <div class="footer">
