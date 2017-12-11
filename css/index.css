@@ -1,0 +1,83 @@
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#background {
+    text-align: center;
+    background: url(/assets/images/main-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.fill-height {
+    height: 100%
+}
+.profile-content {
+    color: #c0c0c0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.profile-content img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+.menu {
+    margin-top: 40px;
+    font-size: 14px;
+}
+.menu a {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-bottom: 1px solid #c0c0c0;
+}
+.menu a:hover {
+    border-bottom: 1px solid #eee;
+}
+.footer {
+    margin-top: 20px;
+}
+.footer-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.menu a,
+.footer-text a {
+    color: #b0b0b0;
+}
+.menu a:hover,
+.footer-text a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-text i {
+    margin-right: 5px;
+}
+.animate-drop-init {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+}
+.animate-show-init {
+    opacity: 0;
+}
+
+@media screen and (max-width: 26em) {
+
+    .mobile-hide {
+        display: none;
+    }
+    .profile-content h2 {
+        font-size: 36px;
+    }
+    .profile-content .profile-summary {
+        margin-top: 30px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .menu {
+        font-size: 16px;
+    }
+}
